@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Official Navbar</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="logo">❤️</div>
+    <div class="subtitle">BMI Calculator</div>
+  </nav>
+  
+  <div class="wrap">
+    <div class="forflex">
+    <button class="cross-btn" onclick="crossed_tool()">X</button>
+    <div class="title">Length Conversion</div>
+  
+  
+    <label>Centimeters (cm): </label>
+    <input id="cmInput" type="text" placeholder="Enter centimeters" oninput="convertCm()">
+  
+    <label>Feet (ft): </label>
+    <input id="ftInput" type="text" placeholder="Enter feet" oninput="convertFt()">
+  
+    <label>Meters (m): </label>
+    <input id="mInput" type="text" placeholder="Enter meters" oninput="convertM()">
+  </div>
+  
+  </div>
+
+
+
+  <div class="wrap2">
+    <div class="forflex2">
+      <button class="cross-btn" onclick="crossed_tool2()">X</button>
+      <div class="title">Weight Conversion</div>
+  
+      <label>Kilograms (kg): </label>
+      <input id="kgInput" type="text" placeholder="Enter kilograms" oninput="convertKg()">
+  
+      <label>Pounds (lb): </label>
+      <input id="lbInput" type="text" placeholder="Enter pounds" oninput="convertLb()">
+  
+    </div>
+  </div>
+  
+  <div class="formWrap">
+    <form>
+      <div class="row1">
+        <label>Weight: </label>
+         <input id="weight" type="text" placeholder="in Kg" />
+        <button class="w-converter" onclick="convertWeight(event)">📐</button>
+      </div>
+      <div class="row2">
+        <label>Height: </label>
+        <input id="height" type="text" placeholder="in Centimetres" /> 
+        <button class="h-converter" onclick="convertHeight(event)">📐</button>
+      </div>
+      <div class="event-button">
+        <button onclick="clicked()" type="button">Calculate</button></div>
+      <div id="ans"></div>
+    </form>
+    <button class="cross" onclick="crossed()">X</button>
+  </div>
+
+  <button class="show-button" onclick="showFormWrap()"><img width="250" height="250" src="https://img.icons8.com/cute-clipart/64/bmi.png" alt="bmi"/></button>
+
+</body>
+</html>

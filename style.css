@@ -1,0 +1,299 @@
+/* CSS styles for the navbar */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Anonymous Pro;
+  color: #f9f3f3;
+  background: url('bg.jpg');
+  background-size: cover;
+  min-height: fit-content;
+ 
+}
+
+
+nav {
+  background-color: #f9f3f3;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+nav:first-child {
+  margin-right: auto;
+  display: block;
+  padding: 5px;
+  background-color: black;
+  font-size: 2rem;
+}
+
+nav .logo {
+  /* animation: rotateLogo 5s linear infinite; */
+  position: relative;
+  top: -2px;
+  left: 20px;
+  font-size: 3rem;
+}
+
+@keyframes rotateLogo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+nav .subtitle {
+  color: #000;
+  position: absolute;
+  top: 9%;
+  left: 50%;
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  /* display: block; */
+  animation: moveSubtitle 10s ease-in-out infinite alternate;
+}
+
+@keyframes moveSubtitle {
+  0% {
+    left: 5%;
+  }
+  100% {
+    left: 80%;
+  }
+}
+.formWrap{
+  font-size: 2rem;
+  position: absolute;
+  top: 20%;
+  left: 37%;
+  z-index: 10;
+  background: url('grad.jpg');
+  background-size:cover;
+  padding: 20px;
+  height: 300px;
+  width: fit-content;
+  border-radius: 5px;
+  box-shadow: 5px 10px 10px rgb(179, 173, 173);
+  
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.row1{
+  margin-top: 40px;
+  margin-bottom: 30px;
+  display: flex;
+  margin-left: 18px;
+}
+.row2{
+  margin-bottom: 60px;
+  display: flex;
+  margin-left: 18px;
+}
+
+
+.event-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 4px;
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button{
+  background: transparent;
+  border: none;
+  font-size: 1.3rem;
+  font-family: Source Code Pro;
+  color: white;
+  display: block;
+  border-radius: 5px;
+  outline: none;
+
+
+}
+
+.event-button:hover {
+  background-color: #45a049;
+}
+
+.event-button:active {
+  background-color: #3e8e41;
+}
+
+.event-button:focus {
+  outline: none;
+}
+input{
+  font-size: 1.5rem;
+  padding: 10px;
+  font-family: Source Code Pro;
+  outline: none;
+  background-color: #f7f8f0;
+  border: none;
+  color: rgb(11, 11, 11);
+  box-shadow: 5px 10px 10px rgb(179, 173, 173);
+}
+
+input:hover {
+  background-color: #d8d8d6;
+}
+
+
+
+#ans{
+  margin-top: 50px;
+  width: auto;
+  height: 37px;
+  color: #000;
+  border-radius: 5px;
+  
+  padding: 4px;
+  display: flex;
+  font-family: Anonymous Pro;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+label{
+  color: #000;
+  margin-top: 22px;
+  font-weight: 900;
+}
+.cross{
+  position: absolute;
+  top: 0;
+  right: 0px;
+  display: block;
+  background-color: red;
+  width: 40px;
+  padding-left: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  
+
+}
+.cross:active{
+  background-color: #000;
+}
+.show-button{
+  font-size: 2rem;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 50%;
+  left: 43%;
+  background-color: rgb(216, 245, 50);
+}
+
+
+
+
+
+.wrap{
+  display: none;
+
+}
+.wrap2{
+ 
+  display: none;
+}
+
+/* ================== */
+.forflex{
+  display: flex;
+  position: relative;
+    /* margin-left: 70px;
+  margin-top: 113px; */
+
+  flex-direction: column;
+  background-color: rgb(207, 250, 49);
+  width:fit-content;
+  padding: 20px;
+ align-items: center;
+ justify-content: center;
+ border-radius: 5px;
+}
+.forflex2{
+  display: flex;
+  position: relative;
+   /* left: 78%;
+   margin-top: 100px; */
+
+  flex-direction: column;
+  background-color: rgb(207, 250, 49);
+  width:fit-content;
+  padding: 20px;
+  height: 367px;
+ align-items: center;
+ justify-content: center;
+ border-radius: 5px;
+}
+input{
+  padding: 10px;
+  margin: 10px;
+  outline: none;
+  border: none;
+  font-size: 1.3rem;
+  width: 200px;
+  border-radius: 20px;
+}
+label{
+font-size: 1.3rem;
+font-family: Anonymous Pro;
+}
+.title{
+  font-size: 2rem;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 4px;
+}
+.cross-btn{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 5px;
+  width: 30px;
+  background-color: red;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+
+}
+.w-converter{
+  background-color:#4CAF50;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+  right: 40px;
+}
+.h-converter{
+  background-color:#4CAF50;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+  right: 40px;
+}
+.chart{
+  width: 600px;
+height: auto;
+position: absolute;
+right: 0;
+}
